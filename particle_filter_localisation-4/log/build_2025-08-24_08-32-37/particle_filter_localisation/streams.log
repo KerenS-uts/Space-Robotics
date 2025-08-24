@@ -1,0 +1,19 @@
+[0.732s] Invoking command in '/home/student/git/Space-Robotics/particle_filter_localisation-4/build/particle_filter_localisation': PYTHONPATH=/home/student/git/Space-Robotics/particle_filter_localisation-4/build/particle_filter_localisation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/git/Space-Robotics/particle_filter_localisation-4/install/particle_filter_localisation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/student/git/Space-Robotics/particle_filter_localisation-4/build/particle_filter_localisation/build --no-deps symlink_data
+[1.017s] running develop
+[1.193s] running egg_info
+[1.193s] writing particle_filter_localisation.egg-info/PKG-INFO
+[1.193s] writing dependency_links to particle_filter_localisation.egg-info/dependency_links.txt
+[1.194s] writing entry points to particle_filter_localisation.egg-info/entry_points.txt
+[1.194s] writing requirements to particle_filter_localisation.egg-info/requires.txt
+[1.194s] writing top-level names to particle_filter_localisation.egg-info/top_level.txt
+[1.197s] reading manifest file 'particle_filter_localisation.egg-info/SOURCES.txt'
+[1.199s] writing manifest file 'particle_filter_localisation.egg-info/SOURCES.txt'
+[1.200s] running build_ext
+[1.201s] Creating /home/student/git/Space-Robotics/particle_filter_localisation-4/install/particle_filter_localisation/lib/python3.10/site-packages/particle-filter-localisation.egg-link (link to .)
+[1.202s] Installing mock_magnetometer script to /home/student/git/Space-Robotics/particle_filter_localisation-4/install/particle_filter_localisation/lib/particle_filter_localisation
+[1.202s] Installing particle_filter_localisation script to /home/student/git/Space-Robotics/particle_filter_localisation-4/install/particle_filter_localisation/lib/particle_filter_localisation
+[1.202s] Installing visual_terrain_sensor script to /home/student/git/Space-Robotics/particle_filter_localisation-4/install/particle_filter_localisation/lib/particle_filter_localisation
+[1.203s] 
+[1.203s] Installed /home/student/git/Space-Robotics/particle_filter_localisation-4/build/particle_filter_localisation
+[1.203s] running symlink_data
+[1.242s] Invoked command in '/home/student/git/Space-Robotics/particle_filter_localisation-4/build/particle_filter_localisation' returned '0': PYTHONPATH=/home/student/git/Space-Robotics/particle_filter_localisation-4/build/particle_filter_localisation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/git/Space-Robotics/particle_filter_localisation-4/install/particle_filter_localisation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/student/git/Space-Robotics/particle_filter_localisation-4/build/particle_filter_localisation/build --no-deps symlink_data

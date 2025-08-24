@@ -1,0 +1,9 @@
+source;share/particle_filter_localisation/hook/pythonpath.ps1
+source;share/particle_filter_localisation/hook/pythonpath.dsv
+source;share/particle_filter_localisation/hook/pythonpath.sh
+source;share/particle_filter_localisation/hook/ament_prefix_path.ps1
+source;share/particle_filter_localisation/hook/ament_prefix_path.dsv
+source;share/particle_filter_localisation/hook/ament_prefix_path.sh
+source;../../build/particle_filter_localisation/share/particle_filter_localisation/hook/pythonpath_develop.ps1
+source;../../build/particle_filter_localisation/share/particle_filter_localisation/hook/pythonpath_develop.dsv
+source;../../build/particle_filter_localisation/share/particle_filter_localisation/hook/pythonpath_develop.sh

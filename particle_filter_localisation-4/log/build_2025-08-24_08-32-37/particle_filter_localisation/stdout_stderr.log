@@ -1,0 +1,17 @@
+running develop
+running egg_info
+writing particle_filter_localisation.egg-info/PKG-INFO
+writing dependency_links to particle_filter_localisation.egg-info/dependency_links.txt
+writing entry points to particle_filter_localisation.egg-info/entry_points.txt
+writing requirements to particle_filter_localisation.egg-info/requires.txt
+writing top-level names to particle_filter_localisation.egg-info/top_level.txt
+reading manifest file 'particle_filter_localisation.egg-info/SOURCES.txt'
+writing manifest file 'particle_filter_localisation.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/student/git/Space-Robotics/particle_filter_localisation-4/install/particle_filter_localisation/lib/python3.10/site-packages/particle-filter-localisation.egg-link (link to .)
+Installing mock_magnetometer script to /home/student/git/Space-Robotics/particle_filter_localisation-4/install/particle_filter_localisation/lib/particle_filter_localisation
+Installing particle_filter_localisation script to /home/student/git/Space-Robotics/particle_filter_localisation-4/install/particle_filter_localisation/lib/particle_filter_localisation
+Installing visual_terrain_sensor script to /home/student/git/Space-Robotics/particle_filter_localisation-4/install/particle_filter_localisation/lib/particle_filter_localisation
+
+Installed /home/student/git/Space-Robotics/particle_filter_localisation-4/build/particle_filter_localisation
+running symlink_data

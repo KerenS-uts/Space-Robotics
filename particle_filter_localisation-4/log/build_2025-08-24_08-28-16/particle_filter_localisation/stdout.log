@@ -1,0 +1,39 @@
+running develop
+running egg_info
+creating particle_filter_localisation.egg-info
+writing particle_filter_localisation.egg-info/PKG-INFO
+writing dependency_links to particle_filter_localisation.egg-info/dependency_links.txt
+writing entry points to particle_filter_localisation.egg-info/entry_points.txt
+writing requirements to particle_filter_localisation.egg-info/requires.txt
+writing top-level names to particle_filter_localisation.egg-info/top_level.txt
+writing manifest file 'particle_filter_localisation.egg-info/SOURCES.txt'
+reading manifest file 'particle_filter_localisation.egg-info/SOURCES.txt'
+writing manifest file 'particle_filter_localisation.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/student/git/Space-Robotics/particle_filter_localisation-4/install/particle_filter_localisation/lib/python3.10/site-packages/particle-filter-localisation.egg-link (link to .)
+Installing mock_magnetometer script to /home/student/git/Space-Robotics/particle_filter_localisation-4/install/particle_filter_localisation/lib/particle_filter_localisation
+Installing particle_filter_localisation script to /home/student/git/Space-Robotics/particle_filter_localisation-4/install/particle_filter_localisation/lib/particle_filter_localisation
+Installing visual_terrain_sensor script to /home/student/git/Space-Robotics/particle_filter_localisation-4/install/particle_filter_localisation/lib/particle_filter_localisation
+
+Installed /home/student/git/Space-Robotics/particle_filter_localisation-4/build/particle_filter_localisation
+running symlink_data
+creating /home/student/git/Space-Robotics/particle_filter_localisation-4/install/particle_filter_localisation/share/ament_index
+creating /home/student/git/Space-Robotics/particle_filter_localisation-4/install/particle_filter_localisation/share/ament_index/resource_index
+creating /home/student/git/Space-Robotics/particle_filter_localisation-4/install/particle_filter_localisation/share/ament_index/resource_index/packages
+symbolically linking /home/student/git/Space-Robotics/particle_filter_localisation-4/build/particle_filter_localisation/resource/particle_filter_localisation -> /home/student/git/Space-Robotics/particle_filter_localisation-4/install/particle_filter_localisation/share/ament_index/resource_index/packages
+symbolically linking /home/student/git/Space-Robotics/particle_filter_localisation-4/build/particle_filter_localisation/package.xml -> /home/student/git/Space-Robotics/particle_filter_localisation-4/install/particle_filter_localisation/share/particle_filter_localisation
+creating /home/student/git/Space-Robotics/particle_filter_localisation-4/install/particle_filter_localisation/share/particle_filter_localisation/launch
+symbolically linking /home/student/git/Space-Robotics/particle_filter_localisation-4/build/particle_filter_localisation/launch/particle_filter_localisation_launch.py -> /home/student/git/Space-Robotics/particle_filter_localisation-4/install/particle_filter_localisation/share/particle_filter_localisation/launch
+creating /home/student/git/Space-Robotics/particle_filter_localisation-4/install/particle_filter_localisation/share/particle_filter_localisation/config
+symbolically linking /home/student/git/Space-Robotics/particle_filter_localisation-4/build/particle_filter_localisation/config/visualisation.rviz -> /home/student/git/Space-Robotics/particle_filter_localisation-4/install/particle_filter_localisation/share/particle_filter_localisation/config
+creating /home/student/git/Space-Robotics/particle_filter_localisation-4/install/particle_filter_localisation/share/particle_filter_localisation/world_data
+symbolically linking /home/student/git/Space-Robotics/particle_filter_localisation-4/build/particle_filter_localisation/world_data/marsyard2022_peaks.bmp -> /home/student/git/Space-Robotics/particle_filter_localisation-4/install/particle_filter_localisation/share/particle_filter_localisation/world_data
+symbolically linking /home/student/git/Space-Robotics/particle_filter_localisation-4/build/particle_filter_localisation/world_data/marsyard2022_class_coloured.bmp -> /home/student/git/Space-Robotics/particle_filter_localisation-4/install/particle_filter_localisation/share/particle_filter_localisation/world_data
+symbolically linking /home/student/git/Space-Robotics/particle_filter_localisation-4/build/particle_filter_localisation/world_data/marsyard2022_map.world -> /home/student/git/Space-Robotics/particle_filter_localisation-4/install/particle_filter_localisation/share/particle_filter_localisation/world_data
+symbolically linking /home/student/git/Space-Robotics/particle_filter_localisation-4/build/particle_filter_localisation/world_data/marsyard2022_class.bmp -> /home/student/git/Space-Robotics/particle_filter_localisation-4/install/particle_filter_localisation/share/particle_filter_localisation/world_data
+symbolically linking /home/student/git/Space-Robotics/particle_filter_localisation-4/build/particle_filter_localisation/world_data/marsyard2022_peaks_list.csv -> /home/student/git/Space-Robotics/particle_filter_localisation-4/install/particle_filter_localisation/share/particle_filter_localisation/world_data
+symbolically linking /home/student/git/Space-Robotics/particle_filter_localisation-4/build/particle_filter_localisation/world_data/marsyard2022_height.bmp -> /home/student/git/Space-Robotics/particle_filter_localisation-4/install/particle_filter_localisation/share/particle_filter_localisation/world_data
+symbolically linking /home/student/git/Space-Robotics/particle_filter_localisation-4/build/particle_filter_localisation/world_data/marsyard2022_obstacles.bmp -> /home/student/git/Space-Robotics/particle_filter_localisation-4/install/particle_filter_localisation/share/particle_filter_localisation/world_data
+symbolically linking /home/student/git/Space-Robotics/particle_filter_localisation-4/build/particle_filter_localisation/world_data/marsyard2022_parameters.yaml -> /home/student/git/Space-Robotics/particle_filter_localisation-4/install/particle_filter_localisation/share/particle_filter_localisation/world_data
+symbolically linking /home/student/git/Space-Robotics/particle_filter_localisation-4/build/particle_filter_localisation/world_data/marsyard2022.yaml -> /home/student/git/Space-Robotics/particle_filter_localisation-4/install/particle_filter_localisation/share/particle_filter_localisation/world_data
+symbolically linking /home/student/git/Space-Robotics/particle_filter_localisation-4/build/particle_filter_localisation/world_data/marsyard2022_texture_downsample.bmp -> /home/student/git/Space-Robotics/particle_filter_localisation-4/install/particle_filter_localisation/share/particle_filter_localisation/world_data
