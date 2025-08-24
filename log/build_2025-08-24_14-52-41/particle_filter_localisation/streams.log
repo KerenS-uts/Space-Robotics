@@ -1,0 +1,23 @@
+[1.151s] Invoking command in '/home/student/git/Space-Robotics/particle_filter_localisation-4/particle_filter_localisation': PYTHONPATH=/home/student/git/Space-Robotics/build/particle_filter_localisation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/git/Space-Robotics/install/particle_filter_localisation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/particle_filter_localisation build --build-base /home/student/git/Space-Robotics/build/particle_filter_localisation/build install --record /home/student/git/Space-Robotics/build/particle_filter_localisation/install.log --single-version-externally-managed install_data
+[1.569s] running egg_info
+[1.571s] writing ../../build/particle_filter_localisation/particle_filter_localisation.egg-info/PKG-INFO
+[1.573s] writing dependency_links to ../../build/particle_filter_localisation/particle_filter_localisation.egg-info/dependency_links.txt
+[1.574s] writing entry points to ../../build/particle_filter_localisation/particle_filter_localisation.egg-info/entry_points.txt
+[1.576s] writing requirements to ../../build/particle_filter_localisation/particle_filter_localisation.egg-info/requires.txt
+[1.577s] writing top-level names to ../../build/particle_filter_localisation/particle_filter_localisation.egg-info/top_level.txt
+[1.581s] reading manifest file '../../build/particle_filter_localisation/particle_filter_localisation.egg-info/SOURCES.txt'
+[1.583s] writing manifest file '../../build/particle_filter_localisation/particle_filter_localisation.egg-info/SOURCES.txt'
+[1.584s] running build
+[1.584s] running build_py
+[1.585s] running install
+[1.586s] running install_lib
+[1.588s] running install_data
+[1.593s] running install_egg_info
+[1.593s] removing '/home/student/git/Space-Robotics/install/particle_filter_localisation/lib/python3.10/site-packages/particle_filter_localisation-0.0.0-py3.10.egg-info' (and everything under it)
+[1.594s] Copying ../../build/particle_filter_localisation/particle_filter_localisation.egg-info to /home/student/git/Space-Robotics/install/particle_filter_localisation/lib/python3.10/site-packages/particle_filter_localisation-0.0.0-py3.10.egg-info
+[1.596s] running install_scripts
+[1.640s] Installing mock_magnetometer script to /home/student/git/Space-Robotics/install/particle_filter_localisation/lib/particle_filter_localisation
+[1.641s] Installing particle_filter_localisation script to /home/student/git/Space-Robotics/install/particle_filter_localisation/lib/particle_filter_localisation
+[1.641s] Installing visual_terrain_sensor script to /home/student/git/Space-Robotics/install/particle_filter_localisation/lib/particle_filter_localisation
+[1.641s] writing list of installed files to '/home/student/git/Space-Robotics/build/particle_filter_localisation/install.log'
+[1.696s] Invoked command in '/home/student/git/Space-Robotics/particle_filter_localisation-4/particle_filter_localisation' returned '0': PYTHONPATH=/home/student/git/Space-Robotics/build/particle_filter_localisation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/git/Space-Robotics/install/particle_filter_localisation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/particle_filter_localisation build --build-base /home/student/git/Space-Robotics/build/particle_filter_localisation/build install --record /home/student/git/Space-Robotics/build/particle_filter_localisation/install.log --single-version-externally-managed install_data
