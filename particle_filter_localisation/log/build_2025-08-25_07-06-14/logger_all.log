@@ -1,0 +1,91 @@
+[1.531s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[1.531s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7151dc8662f0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7151dc8658d0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7151dc8658d0>>, mixin_verb=('build',))
+[3.751s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[3.751s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[3.751s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[3.751s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[3.751s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[3.751s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[3.751s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/student/ros_ws/src/particle_filter_localisation'
+[3.751s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[3.752s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[3.752s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[3.752s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[3.752s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[3.752s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[3.752s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[3.752s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[3.752s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[3.809s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.ament_python' and name 'particle_filter_localisation'
+[3.809s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[3.809s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[3.809s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[3.810s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[3.810s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[3.988s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[3.989s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[4.016s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/student/ros_ws/install
+[4.021s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/student/ros2_ws/install
+[4.022s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 327 installed packages in /opt/ros/humble
+[4.024s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[4.093s] Level 5:colcon.colcon_core.verb:set package 'particle_filter_localisation' build argument 'cmake_args' from command line to 'None'
+[4.093s] Level 5:colcon.colcon_core.verb:set package 'particle_filter_localisation' build argument 'cmake_target' from command line to 'None'
+[4.093s] Level 5:colcon.colcon_core.verb:set package 'particle_filter_localisation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.093s] Level 5:colcon.colcon_core.verb:set package 'particle_filter_localisation' build argument 'cmake_clean_cache' from command line to 'False'
+[4.093s] Level 5:colcon.colcon_core.verb:set package 'particle_filter_localisation' build argument 'cmake_clean_first' from command line to 'False'
+[4.093s] Level 5:colcon.colcon_core.verb:set package 'particle_filter_localisation' build argument 'cmake_force_configure' from command line to 'False'
+[4.093s] Level 5:colcon.colcon_core.verb:set package 'particle_filter_localisation' build argument 'ament_cmake_args' from command line to 'None'
+[4.093s] Level 5:colcon.colcon_core.verb:set package 'particle_filter_localisation' build argument 'catkin_cmake_args' from command line to 'None'
+[4.093s] Level 5:colcon.colcon_core.verb:set package 'particle_filter_localisation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.093s] DEBUG:colcon.colcon_core.verb:Building package 'particle_filter_localisation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/student/ros_ws/src/particle_filter_localisation/build/particle_filter_localisation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/student/ros_ws/src/particle_filter_localisation/install/particle_filter_localisation', 'merge_install': False, 'path': '/home/student/ros_ws/src/particle_filter_localisation', 'symlink_install': False, 'test_result_base': None}
+[4.094s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[4.095s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[4.095s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/student/ros_ws/src/particle_filter_localisation' with build type 'ament_python'
+[4.095s] Level 1:colcon.colcon_core.shell:create_environment_hook('particle_filter_localisation', 'ament_prefix_path')
+[4.134s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[4.134s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/ros_ws/src/particle_filter_localisation/install/particle_filter_localisation/share/particle_filter_localisation/hook/ament_prefix_path.ps1'
+[4.138s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/ros_ws/src/particle_filter_localisation/install/particle_filter_localisation/share/particle_filter_localisation/hook/ament_prefix_path.dsv'
+[4.143s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/ros_ws/src/particle_filter_localisation/install/particle_filter_localisation/share/particle_filter_localisation/hook/ament_prefix_path.sh'
+[4.147s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.147s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.495s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/student/ros_ws/src/particle_filter_localisation'
+[4.496s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.496s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.255s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/student/ros_ws/src/particle_filter_localisation': PYTHONPATH=/home/student/ros_ws/src/particle_filter_localisation/build/particle_filter_localisation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/ros_ws/src/particle_filter_localisation/install/particle_filter_localisation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/particle_filter_localisation build --build-base /home/student/ros_ws/src/particle_filter_localisation/build/particle_filter_localisation/build install --record /home/student/ros_ws/src/particle_filter_localisation/build/particle_filter_localisation/install.log --single-version-externally-managed install_data
+[7.615s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/student/ros_ws/src/particle_filter_localisation' returned '0': PYTHONPATH=/home/student/ros_ws/src/particle_filter_localisation/build/particle_filter_localisation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/ros_ws/src/particle_filter_localisation/install/particle_filter_localisation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/particle_filter_localisation build --build-base /home/student/ros_ws/src/particle_filter_localisation/build/particle_filter_localisation/build install --record /home/student/ros_ws/src/particle_filter_localisation/build/particle_filter_localisation/install.log --single-version-externally-managed install_data
+[7.667s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros_ws/src/particle_filter_localisation/install/particle_filter_localisation' for CMake module files
+[7.668s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros_ws/src/particle_filter_localisation/install/particle_filter_localisation' for CMake config files
+[7.669s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros_ws/src/particle_filter_localisation/install/particle_filter_localisation/lib'
+[7.669s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros_ws/src/particle_filter_localisation/install/particle_filter_localisation/bin'
+[7.669s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros_ws/src/particle_filter_localisation/install/particle_filter_localisation/lib/pkgconfig/particle_filter_localisation.pc'
+[7.670s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros_ws/src/particle_filter_localisation/install/particle_filter_localisation/lib/python3.10/site-packages'
+[7.670s] Level 1:colcon.colcon_core.shell:create_environment_hook('particle_filter_localisation', 'pythonpath')
+[7.670s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/ros_ws/src/particle_filter_localisation/install/particle_filter_localisation/share/particle_filter_localisation/hook/pythonpath.ps1'
+[7.671s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/student/ros_ws/src/particle_filter_localisation/install/particle_filter_localisation/share/particle_filter_localisation/hook/pythonpath.dsv'
+[7.671s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/student/ros_ws/src/particle_filter_localisation/install/particle_filter_localisation/share/particle_filter_localisation/hook/pythonpath.sh'
+[7.672s] Level 1:colcon.colcon_core.environment:checking '/home/student/ros_ws/src/particle_filter_localisation/install/particle_filter_localisation/bin'
+[7.672s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(particle_filter_localisation)
+[7.672s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/ros_ws/src/particle_filter_localisation/install/particle_filter_localisation/share/particle_filter_localisation/package.ps1'
+[7.678s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/student/ros_ws/src/particle_filter_localisation/install/particle_filter_localisation/share/particle_filter_localisation/package.dsv'
+[7.684s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/ros_ws/src/particle_filter_localisation/install/particle_filter_localisation/share/particle_filter_localisation/package.sh'
+[7.689s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/ros_ws/src/particle_filter_localisation/install/particle_filter_localisation/share/particle_filter_localisation/package.bash'
+[7.695s] INFO:colcon.colcon_core.shell:Creating package script '/home/student/ros_ws/src/particle_filter_localisation/install/particle_filter_localisation/share/particle_filter_localisation/package.zsh'
+[7.700s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/student/ros_ws/src/particle_filter_localisation/install/particle_filter_localisation/share/colcon-core/packages/particle_filter_localisation)
+[7.701s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[7.701s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[7.702s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[7.702s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[7.729s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[7.729s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[7.729s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[7.755s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[7.756s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/student/ros_ws/src/particle_filter_localisation/install/local_setup.ps1'
+[7.760s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/student/ros_ws/src/particle_filter_localisation/install/_local_setup_util_ps1.py'
+[7.764s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/student/ros_ws/src/particle_filter_localisation/install/setup.ps1'
+[7.771s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/student/ros_ws/src/particle_filter_localisation/install/local_setup.sh'
+[7.774s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/student/ros_ws/src/particle_filter_localisation/install/_local_setup_util_sh.py'
+[7.775s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/student/ros_ws/src/particle_filter_localisation/install/setup.sh'
+[7.780s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/student/ros_ws/src/particle_filter_localisation/install/local_setup.bash'
+[7.785s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/student/ros_ws/src/particle_filter_localisation/install/setup.bash'
+[7.791s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/student/ros_ws/src/particle_filter_localisation/install/local_setup.zsh'
+[7.796s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/student/ros_ws/src/particle_filter_localisation/install/setup.zsh'

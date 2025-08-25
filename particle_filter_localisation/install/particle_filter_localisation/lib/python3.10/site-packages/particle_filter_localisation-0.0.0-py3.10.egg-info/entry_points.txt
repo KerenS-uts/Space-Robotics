@@ -1,0 +1,5 @@
+[console_scripts]
+mock_magnetometer = particle_filter_localisation.mock_magnetometer:main
+particle_filter_localisation = particle_filter_localisation.particle_filter_localisation:main
+visual_terrain_sensor = particle_filter_localisation.visual_terrain_sensor:main
+

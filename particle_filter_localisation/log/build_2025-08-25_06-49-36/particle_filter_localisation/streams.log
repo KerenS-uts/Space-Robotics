@@ -1,0 +1,26 @@
+[3.300s] Invoking command in '/home/student/ros_ws/src/particle_filter_localisation': PYTHONPATH=/home/student/ros_ws/src/particle_filter_localisation/build/particle_filter_localisation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/ros_ws/src/particle_filter_localisation/install/particle_filter_localisation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/particle_filter_localisation build --build-base /home/student/ros_ws/src/particle_filter_localisation/build/particle_filter_localisation/build install --record /home/student/ros_ws/src/particle_filter_localisation/build/particle_filter_localisation/install.log --single-version-externally-managed install_data
+[3.611s] running egg_info
+[3.612s] writing build/particle_filter_localisation/particle_filter_localisation.egg-info/PKG-INFO
+[3.612s] writing dependency_links to build/particle_filter_localisation/particle_filter_localisation.egg-info/dependency_links.txt
+[3.612s] writing entry points to build/particle_filter_localisation/particle_filter_localisation.egg-info/entry_points.txt
+[3.612s] writing requirements to build/particle_filter_localisation/particle_filter_localisation.egg-info/requires.txt
+[3.612s] writing top-level names to build/particle_filter_localisation/particle_filter_localisation.egg-info/top_level.txt
+[3.615s] reading manifest file 'build/particle_filter_localisation/particle_filter_localisation.egg-info/SOURCES.txt'
+[3.621s] writing manifest file 'build/particle_filter_localisation/particle_filter_localisation.egg-info/SOURCES.txt'
+[3.621s] running build
+[3.621s] running build_py
+[3.621s] copying particle_filter_localisation/particle_filter_localisation.py -> /home/student/ros_ws/src/particle_filter_localisation/build/particle_filter_localisation/build/lib/particle_filter_localisation
+[3.630s] running install
+[3.630s] running install_lib
+[3.632s] copying /home/student/ros_ws/src/particle_filter_localisation/build/particle_filter_localisation/build/lib/particle_filter_localisation/particle_filter_localisation.py -> /home/student/ros_ws/src/particle_filter_localisation/install/particle_filter_localisation/lib/python3.10/site-packages/particle_filter_localisation
+[3.633s] byte-compiling /home/student/ros_ws/src/particle_filter_localisation/install/particle_filter_localisation/lib/python3.10/site-packages/particle_filter_localisation/particle_filter_localisation.py to particle_filter_localisation.cpython-310.pyc
+[3.639s] running install_data
+[3.641s] running install_egg_info
+[3.642s] removing '/home/student/ros_ws/src/particle_filter_localisation/install/particle_filter_localisation/lib/python3.10/site-packages/particle_filter_localisation-0.0.0-py3.10.egg-info' (and everything under it)
+[3.643s] Copying build/particle_filter_localisation/particle_filter_localisation.egg-info to /home/student/ros_ws/src/particle_filter_localisation/install/particle_filter_localisation/lib/python3.10/site-packages/particle_filter_localisation-0.0.0-py3.10.egg-info
+[3.648s] running install_scripts
+[3.673s] Installing mock_magnetometer script to /home/student/ros_ws/src/particle_filter_localisation/install/particle_filter_localisation/lib/particle_filter_localisation
+[3.673s] Installing particle_filter_localisation script to /home/student/ros_ws/src/particle_filter_localisation/install/particle_filter_localisation/lib/particle_filter_localisation
+[3.673s] Installing visual_terrain_sensor script to /home/student/ros_ws/src/particle_filter_localisation/install/particle_filter_localisation/lib/particle_filter_localisation
+[3.674s] writing list of installed files to '/home/student/ros_ws/src/particle_filter_localisation/build/particle_filter_localisation/install.log'
+[3.708s] Invoked command in '/home/student/ros_ws/src/particle_filter_localisation' returned '0': PYTHONPATH=/home/student/ros_ws/src/particle_filter_localisation/build/particle_filter_localisation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/student/ros_ws/src/particle_filter_localisation/install/particle_filter_localisation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/particle_filter_localisation build --build-base /home/student/ros_ws/src/particle_filter_localisation/build/particle_filter_localisation/build install --record /home/student/ros_ws/src/particle_filter_localisation/build/particle_filter_localisation/install.log --single-version-externally-managed install_data
