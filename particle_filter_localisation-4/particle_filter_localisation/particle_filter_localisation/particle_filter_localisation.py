@@ -239,6 +239,16 @@ class ParticleFilter(Node):
         ## YOUR CODE HERE ##
         ## TASK 1         ##
         ####################
+        for i in range(self.num_particles_):
+            x = random_uniform(self.map_x_min_, self.map_x_max_)
+            y = random_uniform(self.map_y_min_, self.map_y_max_)
+            theta = random_uniform(0.0, 2 * math.pi)
+            weight = 1.0 / self.num_particles_  # Equal initial weights
+            
+            particle = Particle(x, y, theta, weight)
+            self.particles_.append(Particle(x, y, theta, weight))
+            
+            #self.particles_.append(particle)
 
 
 
@@ -279,9 +289,17 @@ class ParticleFilter(Node):
         point_x = clicked_point_msg.point.x
         point_y = clicked_point_msg.point.y
 
-        
-
-
+        for i in range(self.num_particles_):
+            # Gaussian distribution around clicked point
+            x = np.random.normal(point_x, self.clicked_point_std_dev_)
+            y = np.random.normal(point_y, self.clicked_point_std_dev_)
+            # Uniform orientation
+            theta = random_uniform(0.0, 2 * math.pi)
+            weight = 1.0 / self.num_particles_
+            
+            particle = Particle(x, y, theta, weight)
+            self.particles_.append(particle)
+            
 
 
         # Don't use the estimated pose just after initialisation
@@ -302,10 +320,20 @@ class ParticleFilter(Node):
         ## Task 2         ##
         ####################
 
-
+# Calculate the sum of all weights
+        total_weight = sum(particle.weight for particle in self.particles_)
+        
+        # Avoid division by zero by resetting to equal weights
+        if total_weight > 0:
+            # Normalise each particle's weight
+            for particle in self.particles_:
+                particle.weight = particle.weight / total_weight
+        else:
+            # If all weights are zero, assign equal weights
+            for particle in self.particles_:
+                particle.weight = 1.0 / len(self.particles_)
 
         
-
 
 
     def hit_scan(self, start_x, start_y, theta, max_range, draw=False):
@@ -544,7 +572,17 @@ class ParticleFilter(Node):
         ## Task 4         ##
         ####################
 
-
+        for particle in self.particles_:
+            # Add noise to distance and rotation
+            noisy_distance = distance + random_normal(self.motion_distance_noise_stddev_)
+            noisy_rotation = rotation + random_normal(self.motion_rotation_noise_stddev_)
+            
+            # Update particle position
+            particle.x += math.cos(particle.theta) * noisy_distance
+            particle.y += math.sin(particle.theta) * noisy_distance
+            
+            # Update particle orientation
+            particle.theta = wrap_angle(particle.theta + noisy_rotation)
 
 
 
@@ -637,13 +675,26 @@ class ParticleFilter(Node):
                 ####################
                 likelihood = 1.0
 
+             # Actual terrain observation from the message
+            observed_terrain = terrain_msg.data  # Check actual message structure in your template
 
+            # Expected terrain value at this particle's position
+            expected_terrain = self.terrain_value(p.x, p.y)
 
+            # Compute the error (difference between observed and expected terrain)
+            error = observed_terrain - expected_terrain
+
+            # Standard deviation for terrain noise
+            sigma = self.terrain_noise_stddev_
+
+            # Compute likelihood using Gaussian model
+            # Formula: (1 / sqrt(2πσ²)) * exp(-(error²) / (2σ²))
+            likelihood = math.exp(-(error ** 2) / (2 * sigma ** 2)) / (math.sqrt(2 * math.pi) * sigma)
 
 
 
                 # Update the particle weight with the likelihood
-                p.weight *= likelihood
+            p.weight *= likelihood
 
         # Normalise particle weights
         self.normalise_weights()
