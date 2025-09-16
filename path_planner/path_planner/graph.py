@@ -194,22 +194,30 @@ class Graph:
                                 ####################
                                 energy_cost = distance # Comment this out once you've done this Task
                                 # energy_cost = ??
-                                
+                                # Constants 
+                                mu = 0.1  # Coefficient of friction
+                                g = 3.71  # Acceleration due to gravity (m/s^2) on Mars
+                                mass = 1025  # Mass of the rover in #kg
 
+                            #    #Convert pixel to world coordinates
+                                p1 = self.map_.pixel_to_world(node_i.x, node_i.y)
+                                p2 = self.map_.pixel_to_world(node_j.x, node_j.y)
 
+                            #    #Calculate Euclidean distance 
+                                distance_2d = math.sqrt((p2[0] - p1[0])**2 + (p2[1] - p1[1])**2)
+                                distance_3d = math.sqrt((p2[0] - p1[0])**2 + (p2[1] - p1[1])**2 + (p2[2] - p1[2])**2)
 
-
-
-
-
-
-
-
-
-
-
+                            #    # Calculate elevation change
+                                delta_h = p2[2] - p1[2]
+                                # Calculate slope angle theta
+                                if distance_2d >0:
+                                    theta = math.atan(delta_h / distance_2d)
+                            #  #  
 
                             else:
+                                theta = 0.0
+                            #    # Calculate energy cost
+                            #    energy_cost = abs(mu * mass * g * math.cos(theta) * distance + mass * g * math.sin(theta) * distance_3d)
 
                                 # Define the edge cost as standard 2D Euclidean distance in pixel coordinates
                                 energy_cost = distance
@@ -233,6 +241,19 @@ class Graph:
         ####################
 
         # while len(self.nodes_) < num_nodes:
+        # Randomly sample pixel coordinates within the map bounds
+        while len(self.nodes_) < num_nodes:
+            rand_x =  random.randint(0, self.map_.obstacle_map_.shape[1] - 1)
+            rand_y =  random.randint(0, self.map_.obstacle_map_.shape[0] - 1)
+            # Check if the sampled point is in free space (not occupied by an obstacle)
+            if not self.map_.is_occupied(rand_x, rand_y):
+                # Create a new node and add it to the list of nodes
+                self.nodes_.append(Node(rand_x, rand_y, idx))
+                idx += 1
+           
+
+            
+
         #   ??
 
 
@@ -392,14 +413,20 @@ class Graph:
             ## YOUR CODE HERE ##
             ## Task 1         ##
             ####################
+            # Get the current node from the list of nodes
+            current_node = self.nodes_[i]
+            # Calculate Euclidean distance from the current node to the point xy
+            distance = math.sqrt((current_node.x - xy[0])**2 + (current_node.y - xy[1])**2)
+            
+            # Check if this is the optimal distance so far
+            if distance < best_dist:
+                best_dist = distance
+                best_index = i
+            
 
-
-
-
-
-            pass # you can remove this line after you have filled in the above code
 
         return best_index
+    #pass # you can remove this line after you have filled in the above code
 
 
     def find_connected_groups(self):
@@ -423,6 +450,19 @@ class Graph:
 
         # Current group
         group_number = 1
+        
+        
+        #for node_idx in range(len(self.nodes_)):
+        #    if groups[node_idx] == 0:  
+        #        # Run connectivity search from this node
+        #        connected_nodes = graph_search.find_connected_nodes(node_idx)
+
+        #        # Assign all reachable nodes to the current group
+        #        for n in connected_nodes:
+        #            groups[n] = group_number
+
+        #        # Increment group number for the next disconnected set
+        #        group_number += 1
 
 
 

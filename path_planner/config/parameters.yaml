@@ -16,7 +16,7 @@ graph_search_controller_node:
     use_distance_transform_graph: false # if this it true, also set do_distance_transform to true
 
     # A* search parameters
-    use_naive_planner: true
+    use_naive_planner: false
     heuristic_weight: 1.0
 
     # Smoothing parameters
